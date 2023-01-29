@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace FunBooksAndVideos.Users.Data.Cryptography
 {
     public interface ICryptographer
@@ -10,6 +5,7 @@ namespace FunBooksAndVideos.Users.Data.Cryptography
         public PasswordStore  CreatePasswordHash(string password);
 
         public bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt);
-       
+
+        public string CreateToken(Models.User user);
     }
 }

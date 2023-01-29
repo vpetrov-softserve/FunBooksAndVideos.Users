@@ -41,7 +41,7 @@ namespace FunBooksAndVideos.Users.Data.Authorization
             else
             {
                 response.Success = true;
-                response.Data = user.UserId.ToString();
+                response.Data = _cryptographer.CreateToken(user);
             }
 
             return response; 

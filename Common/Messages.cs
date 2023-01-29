@@ -9,5 +9,7 @@ namespace FunBooksAndVideos.Users.Common
     {
         public static string UserExists = "User already exists";
         public static string UserLoginIncorrect = "Username or password incorrect";
+        
+        public static string AppSettingsToken = "AppSettings Token is null";
     }
 }
